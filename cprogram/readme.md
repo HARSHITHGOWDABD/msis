@@ -8,9 +8,9 @@
 - ./a.out ---> it will runs the exegutable file .
 
 # EXAMPLE 
- - mkdir 251100630027_harshith  // creates the new directory with the file name  251100630027_harshith
- - cd 251100630027_harshith     // now we will get into this currecnt directory
- - pwd                         // now we are in the currecnt working directory that we created
- - gedit program1.c           // it will open the editor file with the file name as program1.c
- - gcc program1.c            // graphical compiler will just compile the file and shows if their is any error in it
- - ./a.out                  // will runs the exegutable file 
+ - mkdir 251100630027_harshith  ------>      creates the new directory with the file name  251100630027_harshith
+ - cd 251100630027_harshith     ------->     now we will get into this currecnt directory
+ - pwd                         --------->    now we are in the currecnt working directory that we created
+ - gedit program1.c           ----------->   it will open the editor file with the file name as program1.c
+ - gcc program1.c            ------------>   graphical compiler will just compile the file and shows if their is any error in it
+ - ./a.out                  -------------->   will runs the exegutable file 
