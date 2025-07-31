@@ -1,6 +1,6 @@
 # COMMANDS IN LINUX TO EXEGUTE THE CODE 
 ```
-* pwd ----> refers to print the working directory 
+- pwd ----> refers to print the working directory 
 => mkdir ---> To create the new directory (make directory )
 => cd -------> chanage directory or to get into the file
 => gedit -----> to open the greaphical test editor 
