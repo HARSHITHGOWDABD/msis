@@ -30,9 +30,20 @@
 -  file pointer ---> pointer is a variable used to store the address of another variable ,
 -    eg : int ^ptr ; --> it will store the address of the variable whose datatype is int
 -   fopen ---> to open the function (in stdio.h)
--   fopen(" filename ","mode")
+-  fp= fopen(" filename ","mode")
 -   mode r-----> just to read something
 - .       w------> just to write something
 - .       a------> append somethig
-- 
+-  fclose(fp)  ----> very important to close the file
+-  fputc  ----> write a character into a file
+-  fputs  ----> write a string into a file
+-  puts   ----> write a complete string in a output string
+-   example   main()
+       {
+         file fp ;
+     char ch='a';
+    fp= fopen ("abc.txt", "w"];
+         fputc[ch,fp]
+       fclose[fp]                              
+
    
