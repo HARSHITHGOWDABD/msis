@@ -27,4 +27,11 @@ int main()
 }
 ```
 
+#### output
+```
+enter the upper case letters	H
+ the entered letter is in uppercasse
+ the lower case element is h
+```
+
 
