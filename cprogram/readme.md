@@ -44,6 +44,12 @@
      char ch='a';
     fp= fopen ("abc.txt", "w"];
          fputc[ch,fp]
-       fclose[fp]                              
+       fclose[fp]
+
+
+  - by using fprint we can write the string also and character also
+  - to keep the previous data and also to add we can use the append mode
+  - feof ---> end of file
+  - read mode will not create a file if it is not exists 
 
    
