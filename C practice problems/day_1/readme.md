@@ -1,4 +1,4 @@
-# Write a program that converts upper case to lower. 
+# 1. Write a program that converts upper case to lower. 
 ```
 #include<stdio.h>
 int main()
