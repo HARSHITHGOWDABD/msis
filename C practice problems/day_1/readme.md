@@ -33,5 +33,30 @@ enter the upper case letters	H
  the entered letter is in uppercasse
  the lower case element is h
 ```
+```
+#include<stdio.h>
+int main()
+{
+    int i;
+    char ch[100];
+    char ch2;
+    printf( " enter the upper case letters\t");
+    scanf(" %s",&ch);
+    
+    
+    for (i=0; i< ch[i]!='\0' ; i++)
+    {
+    if( ch[i]>='A' && ch[i] <='Z' ){
+        
+       
+        
+        ch[i]= ch[i]+32;
+        
+       }  
+     
+    }
+    
+    printf(" the lower case element is %s",ch);
+```
 
 
