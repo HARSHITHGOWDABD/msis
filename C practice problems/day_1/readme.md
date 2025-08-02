@@ -201,6 +201,78 @@ Note : Leap year is year in which it should divisible by 4 , but if it centurium
 enter the year  1900
  1900 is not a leapyear
 ```
+# 7.WAP to find power of 2^N using left shift operator.
+```
+Note : left shift will multiply 2 by n time , but right shift will divide by divide by 2
+```
+```
+#include<stdio.h>
+ int main()
+  {
+      
+      int n,result;
+      printf(" enter the value of n\t");
+      scanf(" %d",&n);
+      
+      result=1<<n;
+      
+      printf("the vale of left shift %d",result);
+      
+    
+    }
+```
+###  Output 
+```
+enter the value of n	4
+the vale of left shift 16
+```
 
+# 8.Check if given input is a character or integer. (Use integer input within the range 0-9)
+```
+#include<stdio.h>
+ int main()
+ 
+ {  
+     
+     char input;
+     printf("enter the inputs as a character or a integer ");
+     scanf("%c",&input );
+     
+     if(input>='0' && input<='9')
+         
+         printf("the input is a integer ");
+         
+   
+     
+     else if( input>='A'   && input<='z')
+         printf("the input is a character ");
+         
+         else 
+          printf("it is either character or integer ");
+ }
+```
+### Output
+```
+enter the inputs as a character or a integer f
+f the input is a character
+```
+# 9.Generate two random numbers and find its sum (Hint: use rand() from stdlib.h) 
+```
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int main(){
+    int num1,num2,sum;
+    srand(time(0));
+    num1=rand()%100;
+    num2=rand()%100;
+    sum=num1+num2;
+    printf("the frist number:%d\n",num1);
+    printf("the second number:%d\n",num2);
+    printf("the sum of two number is:%d\n",sum);
+    return 0;   
+}
+```
 
 
