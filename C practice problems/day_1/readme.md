@@ -165,5 +165,42 @@ enter the temperature in celcius 8
 enter the number 6
  the number is even
 ```
+# 6. Check if entered year is leap year or not.
+```
+Note : Leap year is year in which it should divisible by 4 , but if it centurium year it will divisible by 100 also then we need to check with 400 only if it is divisible by 400 then it is leap year.
+```
+```
+
+#include<stdio.h>
+ int main()
+  {
+      int year ;
+       
+      printf("enter the year  ");
+      scanf("%d",&year);
+      
+      if(year%400==0)
+          printf("%d is a leapyear",year);
+      
+      else if(year%100==0) 
+          printf(" %d is not a leapyear",year);
+          
+      else if(year%4==0)
+          printf("%d is  a leapyear", year );
+       
+     else 
+          printf(" it is not a leapyear");
+    
+      
+      
+      
+  }
+```
+### Output
+```
+enter the year  1900
+ 1900 is not a leapyear
+```
+
 
 
