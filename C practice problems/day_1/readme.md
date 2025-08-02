@@ -58,5 +58,112 @@ int main()
     
     printf(" the lower case element is %s",ch);
 ```
+# 2. Write a program to calculate the area of Circle. 
+```
+#include<stdio.h>
+#define pi 3.14
+  int main()
+  {
+      float r;
+      int area;
+      
+      printf(" enter the radius of the circle ");
+      scanf("%f",&r);
+      
+      area= pi*r*r;
+      
+      printf("area of the circle is %d",area);
+      
+  }
+  ```
+### output 
+```
+enter the radius of the circle 5
+area of the circle is 78
+```
+
+# 3. Given two character inputs, find number of characters between them. For example, if 
+input is ‘A’ and ‘E’ the output is 3. 
+```
+
+
+#include<stdio.h>
+#include <stdlib.h>
+
+ 
+ int main()
+ {
+     char ch1,ch2;
+     int result ;
+     printf("enter the firt character ");
+     scanf(" %c",&ch1);
+     
+     printf("enter the second  character ");
+     scanf(" %c",&ch2);
+     
+     result=  abs(ch1-ch2)-1;
+      printf("the result is %d",result);
+     
+     
+     
+ }
+ ```
+### OUTPUT 
+```
+enter the firt character A
+enter the second  character E
+the result is 3
+
+```
+# 4.Write a program to convert temperature from Celsius to Fahrenheit 
+```
+#include<stdio.h>
+
+int main()
+ {
+     float celcius , faranheat;
+      
+      printf(" enter the temperature in celcius ");
+      scanf("%f",&celcius);
+      
+      faranheat = (celcius *9/5)+32;
+      
+      printf(" the teperature in faranheat is %f",faranheat);
+      
+     
+     
+ }
+ ```
+### OUTPUT 
+```
+enter the temperature in celcius 8
+ the teperature in faranheat is 46.400002
+```
+
+# 5.Check if entered number is even or odd. 
+```
+#include<stdio.h>
+ int main()
+  {
+      int n;
+       
+      printf("enter the number ");
+      scanf("%d",&n);
+      
+      if( n%2==0)
+        {
+            printf(" the number is even ");
+            
+        }
+        
+        else
+            printf(" the number is odd");
+  }
+```
+### Output 
+```
+enter the number 6
+ the number is even
+```
 
 
