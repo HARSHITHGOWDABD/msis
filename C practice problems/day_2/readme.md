@@ -27,3 +27,35 @@
 enter a five digit number12345
  the result is  15
 ```
+# Write a program to reverse the number. For E.g. If int number = 12345; then the output reverse = 54321;
+```
+#include<stdio.h>
+  int main()
+  {      
+      int n,i,result=0,digit;
+       printf("enter a five digit number");
+       scanf("%d",&n);
+       
+       for( i=0; i<5 ;i++)
+       
+        { 
+            digit = n%10 ; // to get the last value 
+            
+            result =result *10 + digit ;  // 10 we need to increase the unit
+            
+            n=n/10; // to remove the last digit
+        }
+        
+        printf(" the result is % d", result);
+       
+       
+  }
+```
+## Output 
+  ```
+enter a five digit number12345
+ the result is  54321
+```
+# Write a program to count the occurrences of a digit in a number.
+```
+
