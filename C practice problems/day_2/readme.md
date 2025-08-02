@@ -90,5 +90,43 @@ enter the number 222
  enter the number which need to count  2
  the counte value is 3
 ```
+# 4. WAP to check if a given number is a palindrome. For e.g. 12321, 56788765;
+```
+# include<stdio.h>
+ int main()
+ {  
+      int n,temp,digit,reverse=0;
+      printf (" enter the number ");
+      scanf("%d",&n);
+      
+     temp = n;
+      
+      while(temp!=0)
+      {
+          digit =temp %10;
+          reverse= reverse*10 +digit;
+           temp=temp/10;
+          
+      }
+      printf(" the reverse nummber is %d\n", reverse);
+      
+      if (reverse== n)
+      {
+          printf(" the number is pallendrome");
+          
+      }
+     else  
+      printf(" it is not a pallendrome");
+      
+ }
+```
+### Output 
+
+```
+enter the number 1234
+ the reverse nummber is 4321
+ it is not a pallendrome
+```
+
 
 
