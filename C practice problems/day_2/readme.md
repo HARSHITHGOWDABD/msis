@@ -402,7 +402,205 @@ side. The volume is then calculated and printed.
 If the user chooses the option for cuboid, only three inputs are required i.e., length, 
 breadth and height. The volume is then calculated and printed. 
 ```
+#include <stdio.h>
+#include <math.h>
 
+// Function to calculate volume of cube
+float volumeCube(float side) {
+    return side * side * side;
+}
+
+// Function to calculate volume of cuboid
+float volumeCuboid(float length, float breadth, float height) {
+    return length * breadth * height;
+}
+
+// Function to calculate volume of sphere
+float volumeSphere(float radius) {
+    return (4.0 / 3.0) * M_PI * radius * radius * radius;
+}
+
+// Function to calculate volume of cylinder
+float volumeCylinder(float radius, float height) {
+    return M_PI * radius * radius * height;
+}
+
+// Function to calculate volume of cone
+float volumeCone(float radius, float height) {
+    return (1.0 / 3.0) * M_PI * radius * radius * height;
+}
+
+int main() {
+    int choice;
+    float side, length, breadth, height, radius;
+
+    printf("Menu:\n");
+    printf("1. Volume of Cube\n");
+    printf("2. Volume of Cuboid\n");
+    printf("3. Volume of Sphere\n");
+    printf("4. Volume of Cylinder\n");
+    printf("5. Volume of Cone\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1:
+            printf("Enter the side of the cube: ");
+            scanf("%f", &side);
+            printf("Volume of Cube = %.2f\n", volumeCube(side));
+            break;
+
+        case 2:
+            printf("Enter length, breadth, and height of cuboid: ");
+            scanf("%f %f %f", &length, &breadth, &height);
+            printf("Volume of Cuboid = %.2f\n", volumeCuboid(length, breadth, height));
+            break;
+
+        case 3:
+            printf("Enter the radius of the sphere: ");
+            scanf("%f", &radius);
+            printf("Volume of Sphere = %.2f\n", volumeSphere(radius));
+            break;
+
+        case 4:
+            printf("Enter radius and height of cylinder: ");
+            scanf("%f %f", &radius, &height);
+            printf("Volume of Cylinder = %.2f\n", volumeCylinder(radius, height));
+            break;
+
+        case 5:
+            printf("Enter radius and height of cone: ");
+            scanf("%f %f", &radius, &height);
+            printf("Volume of Cone = %.2f\n", volumeCone(radius, height));
+            break;
+
+        default:
+            printf("Invalid choice!\n");
+    }
+
+    return 0;
+}
+```
+### output
+```
+Menu:
+1. Volume of Cube
+2. Volume of Cuboid
+3. Volume of Sphere
+4. Volume of Cylinder
+5. Volume of Cone
+Enter your choice: 2
+Enter length, breadth, and height of cuboid: 12 
+13
+14
+Volume of Cuboid = 2184.00
+```
+# 11. An Electricity board charges the following rates for use of electricity.  
+For the First 200 units : Rs 5 per unit  
+For the next 100 units : Rs7 per unit  
+Beyond 300 units : Rs 10 Per unit.  
+Write a C Program to read no of units consumed and print out total charge amount 
+```
+#include <stdio.h>
+
+int main() {
+    int units;
+    float amount = 0;
+
+    printf("Enter the number of units consumed: ");
+    scanf("%d", &units);
+
+    if (units <= 200) {
+        amount = units * 5;
+    }
+    else if (units <= 300) {
+        amount = (200 * 5) + ((units - 200) * 7);
+    }
+    else { // units > 300
+        amount = (200 * 5) + (100 * 7) + ((units - 300) * 10);
+    }
+
+    printf("Total Electricity Bill = Rs %.2f\n", amount);
+
+    return 0;
+}
+```
+### output
+```
+Enter the number of units consumed: 200
+Total Electricity Bill = Rs 1000.00
+```
+# WAP to convert a binary number to decimal and vice versa.
+```
+#include <stdio.h>
+#include <math.h>
+
+// Function to convert Binary to Decimal
+int binaryToDecimal(long long binary) {
+    int decimal = 0, i = 0, digit;
+    while (binary != 0) {
+        digit = binary % 10;          // Get last digit
+        decimal += digit * pow(2, i); // Multiply by 2^i
+        binary /= 10;                 // Remove last digit
+        i++;
+    }
+    return decimal;
+}
+
+// Function to convert Decimal to Binary
+long long decimalToBinary(int decimal) {
+    long long binary = 0;
+    int remainder, place = 1;
+
+    while (decimal != 0) {
+        remainder = decimal % 2;      // Get remainder (0 or 1)
+        binary += remainder * place;  // Place digit
+        decimal /= 2;                 // Divide by 2
+        place *= 10;
+    }
+    return binary;
+}
+
+int main() {
+    int choice;
+    long long binary;
+    int decimal;
+
+    printf("Menu:\n");
+    printf("1. Binary to Decimal\n");
+    printf("2. Decimal to Binary\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch (choice) {
+        case 1:
+            printf("Enter a binary number: ");
+            scanf("%lld", &binary);
+            printf("Decimal equivalent = %d\n", binaryToDecimal(binary));
+            break;
+
+        case 2:
+            printf("Enter a decimal number: ");
+            scanf("%d", &decimal);
+            printf("Binary equivalent = %lld\n", decimalToBinary(decimal));
+            break;
+
+        default:
+            printf("Invalid choice!\n");
+    }
+
+    return 0;
+}
+```
+### Output 
+```
+Menu:
+1. Binary to Decimal
+2. Decimal to Binary
+Enter your choice: 1
+Enter a binary number: 100
+Decimal equivalent = 4
+```
 
 
 
