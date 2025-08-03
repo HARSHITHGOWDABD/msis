@@ -529,7 +529,7 @@ int main() {
 Enter the number of units consumed: 200
 Total Electricity Bill = Rs 1000.00
 ```
-# WAP to convert a binary number to decimal and vice versa.
+# 12.WAP to convert a binary number to decimal and vice versa.
 ```
 #include <stdio.h>
 #include <math.h>
@@ -599,6 +599,68 @@ Menu:
 Enter your choice: 1
 Enter a binary number: 100
 Decimal equivalent = 4
+```
+# 13.Generate a sequence of numbers such that every number in the sequence is the sum of 
+the previous three numbers. The first three numbers are 0,0,1.
+```
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter how many terms you want in the sequence: ");
+    scanf("%d", &n);
+
+    int a = 0, b = 0, c = 1, next;
+
+    printf("Sequence: ");
+    printf("%d %d %d ", a, b, c);  // Print first three numbers
+
+    for (int i = 4; i <= n; i++) {
+        next = a + b + c;       // Next number = sum of previous three
+        printf("%d ", next);
+
+        // Update values for next iteration
+        a = b;
+        b = c;
+        c = next;
+    }
+
+    printf("\n");
+    return 0;
+}
+```
+### Output 
+```
+Enter how many terms you want in the sequence: 6
+Sequence: 0 0 1 1 2 4
+```
+# Write a C program, which will print two digit numbers whose sum of both digit is 
+nine. e.g. 18,27,36...... 
+```
+#include <stdio.h>
+
+int main() {
+    int num, digit1, digit2;
+
+    printf("Two-digit numbers whose sum of digits is 9:\n");
+
+    // Loop through all two-digit numbers (10 to 99)
+    for (num = 10; num <= 99; num++) {
+        digit1 = num / 10;  // First digit (tens place)
+        digit2 = num % 10;  // Second digit (ones place)
+
+        if (digit1 + digit2 == 9) {
+            printf("%d ", num);
+        }
+    }
+
+    return 0;
+}
+```
+## output
+```
+Two-digit numbers whose sum of digits is 9:
+18 27 36 45 54 63 72 81 90 
 ```
 
 
