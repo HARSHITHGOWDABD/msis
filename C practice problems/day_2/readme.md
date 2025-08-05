@@ -636,35 +636,40 @@ Sequence: 0 0 1 1 2 4
 ```
 
 # 14. WAP to print the following sketch with input N as number of rows 
-* * * * 
-* * * 
-* * 
-*     
+* * * *
+  * * *
+    * *
+      *
 ```
 #include <stdio.h>
 
 int main() {
     
-   
-      int i,j,n ;
-      
-      for(i=0 ; i<4 ;i++)
-      {
-          for( j=0; j<4-i;j++) 
-           {
-               printf(" * ");
-               
-           } printf("\n");
-          
-      }
+    
+    int i,j;
+    
+    for(i=0; i<4; i++)
+    {
+        for(j=0;j<i;j++)
+        {
+            printf("  ");
+            
+        }
+          for(j=0;j<4-i;j++)
+          {
+              printf("* ");
+          }
+          printf("\n");
+    }
 }
 ```
 ## Output
 ```
-*  *  *  * 
- *  *  * 
- *  * 
- *
+* * * *
+  * * *
+    * *
+      *
+
 ```
 # 15. Generate the following sequence using a single loop with N as number of rows 
 ```
