@@ -634,7 +634,70 @@ int main() {
 Enter how many terms you want in the sequence: 6
 Sequence: 0 0 1 1 2 4
 ```
-# Write a C program, which will print two digit numbers whose sum of both digit is 
+
+# 14. WAP to print the following sketch with input N as number of rows 
+* * * * 
+* * * 
+* * 
+*     
+```
+#include <stdio.h>
+
+int main() {
+    
+   
+      int i,j,n ;
+      
+      for(i=0 ; i<4 ;i++)
+      {
+          for( j=0; j<4-i;j++) 
+           {
+               printf(" * ");
+               
+           } printf("\n");
+          
+      }
+}
+```
+## Output
+```
+*  *  *  * 
+ *  *  * 
+ *  * 
+ *
+```
+# 15. Generate the following sequence using a single loop with N as number of rows 
+```
+#include <stdio.h>
+
+int main() {
+    int n = 4; // number of rows
+    int count = 0, stars = 1;
+
+    for (int i = 0; i < n * (n + 1) / 2; ) {
+        if (count < stars) {
+            printf(" * ");
+            count++;
+            i++;
+        }
+        if (count == stars) {   // after printing one row
+            printf("\n");
+            stars++;           // increase stars for next row
+            count = 0;         // reset star counter
+        }
+    }
+    return 0;
+}
+
+```
+## Output 
+```
+* 
+ *  * 
+ *  *  * 
+ *  *  *  * 
+```
+# 16. Write a C program, which will print two digit numbers whose sum of both digit is 
 nine. e.g. 18,27,36...... 
 ```
 #include <stdio.h>
@@ -662,6 +725,5 @@ int main() {
 Two-digit numbers whose sum of digits is 9:
 18 27 36 45 54 63 72 81 90 
 ```
-
 
 
