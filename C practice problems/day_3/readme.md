@@ -143,4 +143,4 @@ Enter 5 elements:
 Maximum element = 8
 Minimum element = 2
 ```
-
+# 4.
