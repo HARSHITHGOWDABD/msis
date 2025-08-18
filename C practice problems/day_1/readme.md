@@ -1,37 +1,40 @@
 # 1. Write a program that converts upper case to lower. 
 ```
-#include<stdio.h>
-int main()
+// Program to convert upper case to lower case 
+#include <stdio.h>
+
+int lower(char ch1)
 {
-    char ch,ch2;
-    printf( " enter the upper case letters\t");
-    scanf(" %c",&ch);
-    
-    if( ch>='A' && ch <='Z' ){
-        
-        printf(" the entered letter is in uppercase\n");
-        
-        ch2= ch+32;
-        
-        printf(" the lower case element is %c",ch2);
-        
+    if(ch1>'A' && ch1<'Z')
+    {
+        printf(" the lower case letter is given by");
+         
+       return printf(" %c", ch1+32);
         
     }
+}
+
+int main() {
     
-    else{
+    char ch5;
     
-    printf(" it is not a upper case letter ");
+    printf("enter the upper case letter ");
+    scanf("%c",&ch5);
     
-    }
+   lower(  ch5);
     
 }
+
+    
+    
 ```
 
 #### output
 ```
-enter the upper case letters	H
- the entered letter is in uppercasse
- the lower case element is h
+enter the upper case letter H
+ the lower case letter is given by h
+
+
 ```
 ```
 #include<stdio.h>
