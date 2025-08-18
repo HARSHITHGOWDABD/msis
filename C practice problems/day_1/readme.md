@@ -63,26 +63,39 @@ int main()
 ```
 # 2. Write a program to calculate the area of Circle. 
 ```
-#include<stdio.h>
+// Online C compiler to run C program online
+#include <stdio.h>
 #define pi 3.14
-  int main()
-  {
-      float r;
-      int area;
-      
-      printf(" enter the radius of the circle ");
-      scanf("%f",&r);
-      
-      area= pi*r*r;
-      
-      printf("area of the circle is %d",area);
-      
-  }
+
+int area(int r)
+{
+    
+    printf(" the area of the circle is ");
+ return  printf("%f",pi*r*r);
+    
+}
+int main() {
+    
+    float r;
+    printf("enter the radius of the circle ");
+    scanf("%f",&r);
+    
+    area(r);
+    
+   
+    
+    
+    
+    
+
+    return 0;
+}
   ```
 ### output 
 ```
-enter the radius of the circle 5
-area of the circle is 78
+enter the radius of the circle 1
+ the area of the circle is 3.140000
+
 ```
 
 # 3. Given two character inputs, find number of characters between them. For example, if 
