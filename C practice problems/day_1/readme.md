@@ -207,6 +207,16 @@ Note : Leap year is year in which it should divisible by 4 , but if it centurium
 ```
 
 #include<stdio.h>
+
+int leapyear(int num)
+{
+    if( num%400==0 | (num%4==0 && num%100 !=0))
+     printf("%d is a leapyear",num);
+     
+     else 
+       printf("%d is not a leapyear",num);
+    
+}
  int main()
   {
       int year ;
@@ -214,22 +224,19 @@ Note : Leap year is year in which it should divisible by 4 , but if it centurium
       printf("enter the year  ");
       scanf("%d",&year);
       
-      if(year%400==0)
-          printf("%d is a leapyear",year);
-      
-      else if(year%100==0) 
-          printf(" %d is not a leapyear",year);
-          
-      else if(year%4==0)
-          printf("%d is  a leapyear", year );
-       
-     else 
-          printf(" it is not a leapyear");
+      leapyear(year);
     
       
       
       
   }
+
+
+    
+      
+      
+      
+  
 ```
 ### Output
 ```
