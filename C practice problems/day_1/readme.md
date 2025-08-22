@@ -107,6 +107,13 @@ input is ‘A’ and ‘E’ the output is 3.
 #include <stdlib.h>
 
  
+ int find(char ch1 , char ch2)
+ {
+     int result;
+      result=  abs(ch1-ch2)-1;
+      printf("the result is %d",result);
+     
+ }
  int main()
  {
      char ch1,ch2;
@@ -117,12 +124,11 @@ input is ‘A’ and ‘E’ the output is 3.
      printf("enter the second  character ");
      scanf(" %c",&ch2);
      
-     result=  abs(ch1-ch2)-1;
-      printf("the result is %d",result);
-     
+    find (ch1,ch2);
      
      
  }
+
  ```
 ### OUTPUT 
 ```
