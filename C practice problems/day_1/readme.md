@@ -171,14 +171,10 @@ enter the temperature in celcius 8
 # 5.Check if entered number is even or odd. 
 ```
 #include<stdio.h>
- int main()
-  {
-      int n;
-       
-      printf("enter the number ");
-      scanf("%d",&n);
-      
-      if( n%2==0)
+
+int oddeven(int num)
+{
+     if( num%2==0)
         {
             printf(" the number is even ");
             
@@ -186,6 +182,17 @@ enter the temperature in celcius 8
         
         else
             printf(" the number is odd");
+    
+}
+ int main()
+  {
+      int n;
+       
+      printf("enter the number ");
+      scanf("%d",&n);
+      
+      oddeven(n);
+     
   }
 ```
 ### Output 
