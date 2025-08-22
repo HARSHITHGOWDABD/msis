@@ -141,16 +141,22 @@ the result is 3
 ```
 #include<stdio.h>
 
+int faran(float celcius)
+{
+    float  faranheat;
+    faranheat = (celcius *9/5)+32;
+      
+      printf(" the teperature in faranheat is %f",faranheat);
+}
+
 int main()
  {
-     float celcius , faranheat;
+     float celcius ;
       
       printf(" enter the temperature in celcius ");
       scanf("%f",&celcius);
       
-      faranheat = (celcius *9/5)+32;
-      
-      printf(" the teperature in faranheat is %f",faranheat);
+      faran(celcius);
       
      
      
