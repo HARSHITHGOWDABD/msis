@@ -272,6 +272,22 @@ the vale of left shift 16
 # 8.Check if given input is a character or integer. (Use integer input within the range 0-9)
 ```
 #include<stdio.h>
+
+int charnum(char nam)
+{
+     if(nam>='0' && nam<='9')
+         
+         printf("the input is a integer ");
+         
+   
+     
+     else if( nam>='A'   && nam<='z')
+         printf("the input is a character ");
+         
+         else 
+          printf("it is either character or integer ");
+    
+}
  int main()
  
  {  
@@ -280,18 +296,11 @@ the vale of left shift 16
      printf("enter the inputs as a character or a integer ");
      scanf("%c",&input );
      
-     if(input>='0' && input<='9')
-         
-         printf("the input is a integer ");
-         
-   
-     
-     else if( input>='A'   && input<='z')
-         printf("the input is a character ");
-         
-         else 
-          printf("it is either character or integer ");
+     charnum( input);
+    
  }
+     
+     
 ```
 ### Output
 ```
